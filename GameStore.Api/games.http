@@ -1,0 +1,29 @@
+GET http://localhost:5279/games
+
+###
+GET http://localhost:5279/games/2
+
+###
+POST http://localhost:5279/games
+Content-Type: application/json
+
+{
+    // "name": "Silksong",
+    "genre": "Metroidvania", 
+    "price": 19.99,
+    "releaseDate": "2025-09-04"
+}
+
+###
+PUT http://localhost:5279/games/5
+Content-Type: application/json
+
+{
+    "name": "Kingmakers",
+    "genre": "War", 
+    "price": 19.99,
+    "releaseDate": "2025-09-08"
+}
+
+###
+DELETE http://localhost:5279/games/1
